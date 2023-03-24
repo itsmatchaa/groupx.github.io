@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Tagline</title>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="stylesheet" href="quotes.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <img src="menu.png" class="menu-img" />
+               
+                <ul>
+                    <li><a href="index.html" class="hvr-underline-from-left "> Home </a></li>
+                    <li><a href="aboutus.html" class="hvr-underline-from-left"> About Us </a></li>
+                    <li><a href="quotes.html" class="hvr-underline-from-left active"> Tagline </a></li>
+                    <li><a href="meet.html" class="hvr-underline-from-left"> Meet The Team </a></li>
+                </ul> 
+            </nav>
+        </div>
+    <div class="header">
+        <div class="text">
+            <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+            <h2><u>"Eternal Love & Luck"</u></h2>
+            <p>Our Mission is to give the best-value products and services to global customers by innovating, leading, and improving. </p>
+            </div>
+        </div>
+        <div class="center">
+            <div class="container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="int/afmqgg5h0jl9wnr1dfmf.jpg"></div>
+                        <div class="swiper-slide"><img src="int/Colosseum-Rome.webp"></div>
+                        <div class="swiper-slide"><img src="int/image.jpg"></div>
+                        <div class="swiper-slide"><img src="int/Temple-of-Saturn-Arch-Septimius-Severus-Forum.webp"></div>
+                        <div class="swiper-slide"><img src="int/view-Rome.webp"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        AOS.init();
+      </script>
+        <script>
+            const navItems = document.querySelectorAll('nav>ul>li>a')
+            let ms = 100
+
+            navItems.forEach((item) => {
+                item.classList.add('animate__animated', 'animate__fadeInRightBig')
+                item.style.setProperty('animation-delay', ms + 'ms')
+                ms = ms + 100
+            })
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+const swiper = new Swiper('.swiper', {
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+        </script>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+        integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id='sidebar'>
+        <button id="close-menu"><i class="fa-solid fa-xmark"></i></button>
+        <ul class="sidebar-list">
+            <li class="sidebar-item"><a href="https://richanoreta.github.io/ipba-website/q1/#introduction">Quarter 1</a>
+            </li>
+            <li class="sidebar-item"><a href="#">Quarter 2</a></li>
+        </ul>
+    </div>
+
+    <div class="hero">
+        <nav>
+            <button id="open-menu"><img src="menu.png" class="menu-img" /></button>
+            <ul>
+                <li><a href="index.html" class="hvr-underline-from-left active"> Home </a></li>
+                <li><a href="aboutus.html" class="hvr-underline-from-left"> About Us </a></li>
+                <li><a href="quotes.html" class="hvr-underline-from-left"> Tagline </a></li>
+                <li><a href="meet.html" class="hvr-underline-from-left"> Meet The Team </a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="col">
+                <section class="introvideo" id="introvideo">
+                    <div class="center">
+                        <video position="relative" height="350" width="550" align="left" controls>
+                            <source src="int/Intro Video_Group2 (1) (1).mp4" type="video/mp4">
+                    </div>
+                </section>
+                </video>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    </div>
+    </div>
+    <script>
+        AOS.init();
+    </script>
+    <script src="sidebar.js"></script>
+    <script>
+        const navItems = document.querySelectorAll('nav>ul>li>a')
+        let ms = 100
+
+        navItems.forEach((item) => {
+            item.classList.add('animate__animated', 'animate__fadeInRightBig')
+            item.style.setProperty('animation-delay', ms + 'ms')
+            ms = ms + 100
+        })
+    </script>
+</body>
+
+</html>
